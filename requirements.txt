@@ -10,6 +10,6 @@ requests==2.16.5
 python-3.6.1
 
 # Or you need not a pip package, @'...' specifies git branch
-git+https://github.com/studentrohman/botpesantrenmutiarabangsa.git
 
-
+pip istall pytelegrambotapi
+telebot
