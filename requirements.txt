@@ -11,5 +11,3 @@ python-3.6.1
 
 # Or you need not a pip package, @'...' specifies git branch
 
-pip istall pytelegrambotapi
-telebot
