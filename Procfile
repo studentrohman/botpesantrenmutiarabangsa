@@ -1,1 +1,1 @@
-worker: python setup.py
+bot: python3 setup.py
