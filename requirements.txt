@@ -1,4 +1,5 @@
 # List of required packages (Dependencies)
+
 redis
 pytelegrambotapi
 telebot
@@ -8,7 +9,6 @@ gunicorn>=19.5.0
 requests==2.16.5
 
 # Or you need not a pip package, @'...' specifies git branch
-git+https://github.com/Kylmakalle/pyTelegramBotAPI.git@feature-BotAPIV3
+git+https://github.com/studentrohman/botpesantrenmutiarabangsa.git
 
-# Or you have .zip library
-https://site.org/files/package.zip
+
