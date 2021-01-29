@@ -4,9 +4,9 @@ Easy way to host your python telegram bot on Heroku
 ## Deploying via [Heroku Toolbelt](https://toolbelt.heroku.com/) (CLI)
 Install [Heroku Toolbelt](https://toolbelt.heroku.com/), then:
 ### Clone repository
-`git clone https://github.com/Kylmakalle/heroku-telegram-bot.git`
+`git clone https://github.com/studentrohman/botpesantrenmutiarabangsa.git`
 ### Edit files
-1. Edit [bot.py](https://github.com/Kylmakalle/heroku-telegram-bot/blob/master/bot.py) file with your code
+1. Edit [setup.py](https://github.com/studentrohman/botpesantrenmutiarabangsa.py) file with your code
 
     1. **ATTENTION!** Do not collapse/delete/comment `some_token = os.environ[SOME_TOKEN]` style stings _(you can delete redis setup line if you do not need it)_, **do not change them with your REAL tokens**, all tokens will be setted up below in this guide!
     
