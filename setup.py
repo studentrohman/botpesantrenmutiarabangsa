@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# here we create the simplest possible bot
-token = os.environ['TELEGRAM_TOKEN']
-some_api_token = os.environ['SOME_API_TOKEN']
-
-
 import telebot
 
 API_TOKEN = '1625321618:AAENq9YhPJOe-qkfRXVPHFz9dQWgvjEx2oA'
