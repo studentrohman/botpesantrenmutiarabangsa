@@ -137,21 +137,21 @@ def command_url(message):
 def command_url(message):
     bot.reply_to(
         message,
-        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk")
+        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk, follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
 
 
 @bot.message_handler(regexp='terima kasih')
 def command_url(message):
     bot.reply_to(
         message,
-        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk")
+        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
 
 
 @bot.message_handler(regexp='mantab')
 def command_url(message):
     bot.reply_to(
         message,
-        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk")
+        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
 
 @bot.message_handler(regexp='makasih')
 def command_url(message):
