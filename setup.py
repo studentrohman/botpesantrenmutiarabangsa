@@ -31,6 +31,39 @@ def command_help(message):
 def command_help(message):
     bot.reply_to(message, "Waalaikumussalam wr wb")
 
+@bot.message_handler(regexp='broh')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "biasakan ucapkan salam diawal"
+    )
+
+@bot.message_handler(regexp='nanya dong')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "iyah, silahkan tapi soal ngaji ya, jangan yang lain"
+    )
+    
+@bot.message_handler(regexp='mau nanya')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "iyah, silahkan tapi soal ngaji ya, jangan yang lain"
+    )
+    
+@bot.message_handler(regexp='cuy')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "biasakan ucapkan salam diawal"
+    )
+@bot.message_handler(regexp='sis')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "biasakan ucapkan salam diawal"
+    )
 
 @bot.message_handler(regexp='ngaji')
 def command_help(message):
