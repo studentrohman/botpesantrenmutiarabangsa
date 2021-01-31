@@ -71,7 +71,25 @@ def command_help(message):
         message,
         "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link pesantrenmutiarabangsa.com/aplikasi atau langsung ke website aku di pesantrenmutiarabangsa.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
     )
-
+@bot.message_handler(regexp='belajar agama')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link pesantrenmutiarabangsa.com/aplikasi atau langsung ke website aku di pesantrenmutiarabangsa.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
+    )
+@bot.message_handler(regexp='pengajian')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link pesantrenmutiarabangsa.com/aplikasi atau langsung ke website aku di pesantrenmutiarabangsa.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
+    )
+    
+@bot.message_handler(regexp='kuliah')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link pesantrenmutiarabangsa.com/aplikasi atau langsung ke website aku di pesantrenmutiarabangsa.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
+    )
 @bot.message_handler(regexp='macam')
 def command_help(message):
     bot.reply_to(
