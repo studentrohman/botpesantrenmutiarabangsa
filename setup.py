@@ -5,6 +5,12 @@ import telebot
 API_TOKEN = '1625321618:AAENq9YhPJOe-qkfRXVPHFz9dQWgvjEx2oA'
 bot = telebot.TeleBot(API_TOKEN)
 
+@bot.message_handler(commands=['start', 'help'])
+def send_welcome(message):
+	'''Welcome message.'''
+	user = message.from_user
+	bot.reply_to(message, f"Assalamualaikum Wr Wb Kak  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}./n kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
+
 @bot.message_handler(regexp='mulai')
 def send_welcome(message):
 	'''Welcome message.'''
