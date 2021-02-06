@@ -21,8 +21,7 @@ def send_welcome(message):
 	bot.reply_to(message, f"Assalamualaikum Wr Wb Kak  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}./n kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
 @bot.message_handler(regexp='mulai')
 def command_help(message):
-    bot.reply_to(
-        message,"Assalamualaikum wr wb, kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
+    bot.reply_to(message,"Assalamualaikum wr wb, kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
 
 @bot.message_handler(regexp='assalamualaikum')
 def command_help(message):
@@ -33,7 +32,7 @@ def command_help(message):
 
 @bot.message_handler(regexp='broh')
 def command_help(message):
-    bot.reply_to(message,f"biasakan ucapkan salam diawal ya kak {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}.")
+    bot.reply_to(message, f"biasakan ucapkan salam diawal ya kak {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}.")
 
 @bot.message_handler(regexp='nanya dong')
 def command_help(message):
@@ -51,22 +50,14 @@ def command_help(message):
     
 @bot.message_handler(regexp='cuy')
 def command_help(message):
-    bot.reply_to(
-        message,
-       f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}"
-    )
+    bot.reply_to(message, f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}")
 @bot.message_handler(regexp='sis')
 def command_help(message):
-    bot.reply_to(
-        message,
-        f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}"
-    )
+    bot.reply_to(message, f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}")
+		 
 @bot.message_handler(regexp='cuk')
 def command_help(message):
-    bot.reply_to(
-        message,
-        f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}"
-    )
+    bot.reply_to(message, f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}")
 @bot.message_handler(regexp='ngaji')
 def command_help(message):
     bot.reply_to(
