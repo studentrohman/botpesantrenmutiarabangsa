@@ -14,7 +14,13 @@ def command_help(message):
         "Assalamualaikum wr wb, kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa"
     )
 
+@bot.message_handler(regexp='mulai')
+def send_welcome(message):
+	'''Welcome message.'''
+	user = message.from_user
+	bot.reply_to(message, f"Assalamualaikum Wr Wb  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}.\.kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
 
+                 
 @bot.message_handler(regexp='mulai')
 def command_help(message):
     bot.reply_to(
