@@ -5,7 +5,68 @@ import telebot
 API_TOKEN = '1625321618:AAENq9YhPJOe-qkfRXVPHFz9dQWgvjEx2oA'
 bot = telebot.TeleBot(API_TOKEN)
 
+@bot.message_handler(regexp='mulai')
+def send_welcome(message):
+	'''Welcome message.'''
+	user = message.from_user
+	bot.reply_to(message, f"Assalamualaikum Wr Wb Kak  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}./n kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
+@bot.message_handler(regexp='mulai')
+def command_help(message):
+    bot.reply_to(message,"Assalamualaikum wr wb, kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
 
+@bot.message_handler(regexp='assalamualaikum')
+def command_help(message):
+    user = message.from_user
+    bot.reply_to(message, f"Waalaikumussalam wr wb Kak  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}.")
+@bot.message_handler(regexp='salam')
+def command_help(message):
+    user = message.from_user
+    bot.reply_to(message, f"Waalaikumussalam wr wb Kak  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}.")
+
+@bot.message_handler(regexp='broh')
+def command_help(message):
+    user = message.from_user
+    bot.reply_to(message, f"biasakan ucapkan salam diawal ya kak {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}.")
+
+@bot.message_handler(regexp='nanya dong')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "iyah, silahkan tapi soal ngaji ya, jangan yang lain"
+    )
+    
+@bot.message_handler(regexp='mau nanya')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "iyah, silahkan tapi soal ngaji ya, jangan yang lain"
+    )
+    
+@bot.message_handler(regexp='cuy')
+def command_help(message):
+    user = message.from_user
+    bot.reply_to(message, f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}")
+@bot.message_handler(regexp='sis')
+def command_help(message):
+    user = message.from_user
+    bot.reply_to(message, f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}")
+		 
+@bot.message_handler(regexp='cuk')
+def command_help(message):
+    user = message.from_user
+    bot.reply_to(message, f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}")
+@bot.message_handler(regexp='ngaji')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link pesantrenmutiarabangsa.com/aplikasi atau langsung ke website aku di pesantrenmutiarabangsa.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
+    )
+@bot.message_handler(regexp='belajar agama')
+def command_help(message):
+    bot.reply_to(
+        message,
+        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link pesantrenmutiarabangsa.com/aplikasi atau langsung ke website aku di pesantrenmutiarabangsa.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
+    )
 # Handle /start and /help
 @bot.message_handler(commands=['mulai'])
 def command_help(message):
