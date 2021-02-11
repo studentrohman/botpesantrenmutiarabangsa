@@ -20,6 +20,12 @@ def send_welcome(message):
 def command_help(message):
     bot.reply_to(message,"Assalamualaikum wr wb, kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
 
+		     
+@bot.message_handler(regexp='kabar')
+def command_help(message):
+    user = message.from_user
+    bot.reply_to(message, f"Alhamdulilah baik, Kak  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}. bagimana kabarnya ")
+		 
 @bot.message_handler(regexp='assalamualaikum')
 def command_help(message):
     user = message.from_user
