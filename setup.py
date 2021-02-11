@@ -61,6 +61,14 @@ def command_help(message):
 def command_help(message):
     user = message.from_user
     bot.reply_to(message, f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}")
+		 
+
+@bot.message_handler(regexp='oi')
+def command_help(message):
+    user = message.from_user
+    bot.reply_to(message, f"biasakan ucapkan salam diawal ya kak   {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}")
+		 
+		 
 @bot.message_handler(regexp='ngaji')
 def command_help(message):
     bot.reply_to(
@@ -168,6 +176,11 @@ def command_url(message):
     bot.reply_to(
         message,
         "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
+@bot.message_handler(regexp='thanks')
+def command_url(message):
+    bot.reply_to(
+        message,
+        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
 
 
 @bot.message_handler(regexp='mantab')
@@ -182,6 +195,13 @@ def command_url(message):
         message,
         "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk")
 
+@bot.message_handler(regexp='pinter')
+def command_url(message):
+    bot.reply_to(
+        message,
+        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
+		 
+		 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     bot.reply_to(message, "maaf yak,   saya belum paham yang kau maksd, coba tanyakan tentang ngaji insyaallah saya bisa memberikan rekomendasi")
