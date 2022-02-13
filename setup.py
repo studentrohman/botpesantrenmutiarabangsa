@@ -9,16 +9,16 @@ bot = telebot.TeleBot(API_TOKEN)
 def send_welcome(message):
 	'''Welcome message.'''
 	user = message.from_user
-	bot.reply_to(message, f"Assalamualaikum Wr Wb Kak  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}./n kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
+	bot.reply_to(message, f"Assalamualaikum Wr Wb Kak  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}./n kenalin aku ning Asyafina.  coba ketik ngaji untuk melihat list ngaji di Madrasah Asyafina")
 
 @bot.message_handler(regexp='mulai')
 def send_welcome(message):
 	'''Welcome message.'''
 	user = message.from_user
-	bot.reply_to(message, f"Assalamualaikum Wr Wb Kak  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}./n kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
+	bot.reply_to(message, f"Assalamualaikum Wr Wb Kak  {user.first_name if user.first_name else ''} {user.last_name if user.last_name else ''}./n kenalin aku Ning Asyafina.  coba ketik ngaji untuk melihat list ngaji di Madrasah Asyafina")
 @bot.message_handler(regexp='mulai')
 def command_help(message):
-    bot.reply_to(message,"Assalamualaikum wr wb, kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa")
+    bot.reply_to(message,"Assalamualaikum wr wb, kenalin aku  Ning Asyafina.  coba ketik ngaji untuk melihat list ngaji di Madrasah Asyafina")
 
 		     
 @bot.message_handler(regexp='kabar')
@@ -79,20 +79,20 @@ def command_help(message):
 def command_help(message):
     bot.reply_to(
         message,
-        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link pesantrenmutiarabangsa.com/aplikasi atau langsung ke website aku di pesantrenmutiarabangsa.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
+        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link asyafina.com/aplikasi atau langsung ke website aku di asyafina.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
     )
 @bot.message_handler(regexp='belajar agama')
 def command_help(message):
     bot.reply_to(
         message,
-        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link pesantrenmutiarabangsa.com/aplikasi atau langsung ke website aku di pesantrenmutiarabangsa.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
+        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link asyafina.com/aplikasi atau langsung ke website aku di asyafina.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
     )
 # Handle /start and /help
 @bot.message_handler(commands=['mulai'])
 def command_help(message):
     bot.reply_to(
         message,
-        "Assalamualaikum wr wb, kenalin aku  santri senior Pesantren Mutiara bangsa.  coba ketik ngaji untuk melihat list ngaji di Pesantren Mutiara Bangsa"
+        "Assalamualaikum wr wb, kenalin aku Ning Asyafina.  coba ketik ngaji untuk melihat list ngaji di Madrasah Asyafina"
     )
 
 
@@ -100,14 +100,14 @@ def command_help(message):
 def command_help(message):
     bot.reply_to(
         message,
-        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link pesantrenmutiarabangsa.com/aplikasi atau langsung ke website aku di pesantrenmutiarabangsa.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
+        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link asyafina.com/aplikasi atau langsung ke website aku di asyafina.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
     )
     
 @bot.message_handler(regexp='kuliah')
 def command_help(message):
     bot.reply_to(
         message,
-        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link pesantrenmutiarabangsa.com/aplikasi atau langsung ke website aku di pesantrenmutiarabangsa.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
+        "santri dapat mengaji dipesantren Online lo, coba donwload dulu aplikasi androidnya di link asyafina.com/aplikasi atau langsung ke website aku di asyafina.com. ketika 'macam kitab' ngaji kamu akan mendapatkan pilihan ngajinya"
     )
 @bot.message_handler(regexp='macam')
 def command_help(message):
@@ -120,7 +120,7 @@ def command_help(message):
 def command_help(message):
     bot.reply_to(
         message,
-        "mau belajar kitab fikih mnihajud tholibin bersama gus baha langsung klik link : https://pesantrenmutiarabangsa.com/courses/ngaji-minhajud-thalibin-bersama-gus-baha/, kalau kitab Syarifatullah bisa klik disini https://pesantrenmutiarabangsa.com/courses/ngaji-syariatullah-al-kholidah-bersama-gus-baha/"
+        "mau belajar kitab fikih mnihajud tholibin bersama gus baha langsung klik link : https://asyafina.com/courses/ngaji-minhajud-thalibin-bersama-gus-baha/, kalau kitab Syarifatullah bisa klik disini https://asyafina.com/courses/ngaji-syariatullah-al-kholidah-bersama-gus-baha/"
     )
 
 
@@ -128,7 +128,7 @@ def command_help(message):
 def command_help(message):
     bot.reply_to(
         message,
-        "coba Klik link berikut untuk ngaji https://pesantrenmutiarabangsa.com/courses/ngaji-al-hikam-bersama-gus-baha/"
+        "coba Klik link berikut untuk ngaji https://asyafina.com/courses/ngaji-al-hikam-bersama-gus-baha/"
     )
 
 
@@ -136,7 +136,7 @@ def command_help(message):
 def command_help(message):
     bot.reply_to(
         message,
-        "coba Klik link berikut untuk ngaji https://pesantrenmutiarabangsa.com/courses/ngaji-al-hikam-bersama-gus-baha/"
+        "coba Klik link berikut untuk ngaji https://asyafina.com/courses/ngaji-al-hikam-bersama-gus-baha/"
     )
 
 
@@ -144,7 +144,7 @@ def command_help(message):
 def command_help(message):
     bot.reply_to(
         message,
-        "coba Klik link berikut untuk ngaji https://pesantrenmutiarabangsa.com/courses/murattal-alquran-sheikh-abdulrahman-al-ossi/"
+        "coba Klik link berikut untuk ngaji https://asyafina.com/courses/murattal-alquran-sheikh-abdulrahman-al-ossi/"
     )
 
 
@@ -152,7 +152,7 @@ def command_help(message):
 def command_help(message):
     bot.reply_to(
         message,
-        "coba Klik link berikut untuk ngaji https://pesantrenmutiarabangsa.com/courses/murattal-alquran-sheikh-abdulrahman-al-ossi/"
+        "coba Klik link berikut untuk ngaji https://asyafina.com/courses/murattal-alquran-sheikh-abdulrahman-al-ossi/"
     )
 
 
@@ -160,7 +160,7 @@ def command_help(message):
 def command_help(message):
     bot.reply_to(
         message,
-        "coba Klik link berikut untuk ngaji https://pesantrenmutiarabangsa.com/courses/shirah-nabi-muhammad-bersama-gusbaha/"
+        "coba Klik link berikut untuk ngaji https://asyafina.com/courses/shirah-nabi-muhammad-bersama-gusbaha/"
     )
 
 
@@ -174,26 +174,26 @@ def command_url(message):
 def command_url(message):
     bot.reply_to(
         message,
-        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk, follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
+        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk, follow ig ku di https://www.instagram.com/asyafina_id/, website : https://asyafina.com")
 
 
 @bot.message_handler(regexp='terima kasih')
 def command_url(message):
     bot.reply_to(
         message,
-        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
+        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/asyafina_id/, website : https://asyafina.com")
 @bot.message_handler(regexp='thanks')
 def command_url(message):
     bot.reply_to(
         message,
-        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
+        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/asyafina_id/, website : https://asyafina.com")
 
 
 @bot.message_handler(regexp='mantab')
 def command_url(message):
     bot.reply_to(
         message,
-        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
+        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/asyafina_id/, website : https://asyafina.com")
 
 @bot.message_handler(regexp='makasih')
 def command_url(message):
@@ -205,7 +205,7 @@ def command_url(message):
 def command_url(message):
     bot.reply_to(
         message,
-        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/pesan_mutiara_bangsa/, website : https://pesantrenmutiarabangsa.com")
+        "terima kasih Banyak yakk, jangan lupa ikuti sosial media kita yakk,  follow ig ku di https://www.instagram.com/asyafina_id/, website : https://asyafina.com")
 		 
 		 
 @bot.message_handler(func=lambda message: True)
